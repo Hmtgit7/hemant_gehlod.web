@@ -1,0 +1,637 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/*****play******/
+
+.body {
+  background: url("H/background.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  background: linear-gradient(rgb(158, 175, 184), rgb(255, 255, 68));
+  width: 90vmin;
+  height: 92vmin;
+  border: 2px solid black;
+  display: grid;
+  grid-template-rows: repeat(18, 1fr);
+  grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+  background: linear-gradient(red, yellow);
+  border: 2px solid purple;
+  transform: scale(1.02);
+  border-radius: 12px;
+}
+
+.snake {
+  background-color: yellow;
+  border: 2px solid white;
+  border-radius: 12px;
+}
+
+.food {
+  background: linear-gradient(red, purple);
+  border: 2px solid black;
+  border-radius: 8px;
+}
+
+#scoreBox {
+  position: absolute;
+  top: 9px;
+  right: 200px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Palette Mosaic", cursive;
+}
+
+#hiscoreBox {
+  position: absolute;
+  top: 60px;
+  right: 155px;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Palette Mosaic", cursive;
+}
+
+/************frontpage************/
+.front {
+  background: url("H/bg-2.jpg");
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+}
+
+.fa-volume-up{
+padding:10px;
+margin-top: 10px;
+margin-left: 10px;
+cursor: pointer;
+shadow: 10px 20px red;
+}
+
+.frontpage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-light{
+  color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+
+
+/**.right-col{
+  float: left;
+  margin-left:6%;
+  margin-bottom: 80px;
+  display: flex;
+  align-items: center;
+}
+
+#icon{
+  width: 80px;
+  cursor: pointer;
+  background: transparent;
+  color: #be7016;
+}
+**/
+
+/**.fas{
+  color: #ccc;
+  size: 50px;
+}
+
+.fa-volume-mute{
+  display: none;
+}**/
+/***.snake{
+  align-items: left;
+  alignment: left;
+}
+
+.snake img {
+  margin-left: 0;
+  width: 100px;
+}***/
+
+.btn {
+  padding: 8px 20px;
+  margin: 25px 15px;
+  border: 10px double white;
+  border-radius: 20px;
+  font-size: 50px;
+  color: white;
+  background: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-family: "Palette Mosaic", cursive;
+  box-shadow: 5px 5px 5px #be7016;
+}
+
+.btn:hover {
+  color: white;
+  background: linear-gradient(yellow, green);
+  border-color: linear-gradient(yellow, orange);
+}
+
+.btn-sm {
+  padding: 6px 10px;
+  vertical-align: middle;
+  text-decoration: none;
+}
+
+/*----- ABOUT US -----*/
+
+.aboutus {
+  background: url(H/bg-2.jpg);
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  height: 75vh;
+  width: 30%;
+  background: linear-gradient(yellow, green, blue, purple);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.img {
+  height: 70px;
+  width: 70px;
+  background: url(H/hmt.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50px;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0 10px;
+}
+
+.container h1 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 16%;
+  color: rgb(7, 6, 6);
+}
+
+.container p {
+  text-align: left;
+  color: rgb(3, 3, 3);
+  padding: 10px;
+  font-size: 20px;
+}
+
+.container h3 {
+  margin-top: 3%;
+  color: rgb(10, 9, 9);
+  font-size: 20px;
+}
+
+.button {
+  background: no-repeat;
+  outline: none;
+  border: 1px solid white;
+  color: white;
+  width: 50%;
+  padding: 7px 15px;
+  font-size: large;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.button:hover {
+  background: cornsilk;
+  color: black;
+}
+
+.container h4 {
+  margin-top: 10%;
+  color: darkgoldenrod;
+  text-align: center;
+}
+
+/*****level*****/
+
+.level {
+  align-items: center;
+  margin-right: 500px;
+  margin-left: 180px;
+  margin-bottom: 500px;
+  padding: 20px 10px;
+  size: fixed;
+}
+
+.levelpts {
+  background: url(H/bg-2.jpg);
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.square-button {
+  padding: 8px 20px;
+  margin: 7px 3px;
+  border: 2px solid white;
+  border-radius: 20px;
+  font-size: 50px;
+  color: white;
+  background: none;
+  cursor: pointer;
+  align-items: center;
+  font-family: "Palette Mosaic", cursive;
+}
+
+.square-button:hover {
+  color: white;
+  background: linear-gradient(yellow, green);
+  border-color: linear-gradient(yellow, orange);
+}
+
+/***** back button *****/
+
+.hmt {
+  background: no-repeat;
+  outline: none;
+  border: 5px solid white;
+  color: grey;
+  width: auto;
+  font-size: 50px;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 3%;
+  border-radius: 20px;
+  padding: 8px, 16px;
+}
+
+.hmt:hover {
+  background: linear-gradient(yellow, orange, red);
+  color: grey;
+  border-color: orange;
+}
+
+.fa {
+  color: grey;
+}
+
+/*****help*****/
+
+.helppts {
+  background: url(H/bg-2.jpg);
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.helppts h1 {
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  margin-left: 800px;
+}
+.up img {
+  width: 65px;
+  margin: 20px 4px 6px 8px;
+  padding: 10px 5px;
+}
+
+.up {
+  font-size: 50px;
+  color: white;
+}
+
+.down {
+  font-size: 50px;
+  color: white;
+}
+
+.left {
+  font-size: 50px;
+  color: white;
+}
+
+.right {
+  font-size: 50px;
+  color: white;
+}
+
+.enter {
+  font-size: 50px;
+  color: white;
+}
+
+.down img {
+  width: 65px;
+  margin: 2px 4px 6px 8px;
+  padding: 10px 5px;
+}
+
+.left img {
+  width: 65px;
+  margin: 2px 4px 6px 8px;
+  padding: 10px 5px;
+}
+
+.right img {
+  width: 65px;
+  margin: 2px 4px 6px 8px;
+  padding: 10px 5px;
+}
+
+.enter img {
+  width: 90px;
+  margin: 2px 4px 6px 8px;
+  padding: 10px 5px;
+}
+
+/***** SETTINGS *****/
+
+.setting {
+  background: url(H/bg-2.jpg);
+  min-height: 100vh;
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-1 {
+  height: 80vh;
+  width: 50%;
+  background: linear-gradient(grey, black, white);
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  border-radius: 50px;
+}
+
+.container-1 h1 {
+  font-size: 80px;
+  text-align: center;
+  margin-top: 10%;
+  color: rgb(7, 6, 6);
+  font-family: "Abril Fatface", cursive;
+  font-family: "Righteous", cursive;
+}
+
+.container-1 p {
+  text-align: left;
+  color: rgb(3, 3, 3);
+  padding: 20px;
+  font-size: 45px;
+  color: antiquewhite;
+  font-family: "Abril Fatface", cursive;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Arial", sans-serif;
+  font-size: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+.mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1em;
+}
+
+/* Switch starts here */
+.rocker {
+  display: inline-block;
+  position: relative;
+  /*
+  SIZE OF SWITCH
+  ==============
+  All sizes are in em - therefore
+  changing the font-size here
+  will change the size of the switch.
+  See .rocker-small below as example.
+  */
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #888;
+  width: 7em;
+  height: 4em;
+  overflow: hidden;
+  border-bottom: 0.5em solid #eee;
+}
+
+.rocker-small {
+  font-size: 0.75em; /* Sizes the switch */
+  margin: 1em;
+}
+
+.rocker::before {
+  content: "";
+  position: absolute;
+  top: 0.5em;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #999;
+  border: 0.5em solid #eee;
+  border-bottom: 0;
+}
+
+.rocker input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch-left,
+.switch-right {
+  cursor: pointer;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5em;
+  width: 3em;
+  transition: 0.2s;
+}
+
+.switch-left {
+  height: 2.4em;
+  width: 2.75em;
+  left: 0.85em;
+  bottom: 0.4em;
+  background-color: #ddd;
+  transform: rotate(15deg) skewX(15deg);
+}
+
+.switch-right {
+  right: 0.5em;
+  bottom: 0;
+  background-color: #bd5757;
+  color: #fff;
+}
+
+.switch-left::before,
+.switch-right::before {
+  content: "";
+  position: absolute;
+  width: 0.4em;
+  height: 2.45em;
+  bottom: -0.45em;
+  background-color: #ccc;
+  transform: skewY(-65deg);
+}
+
+.switch-left::before {
+  left: -0.4em;
+}
+
+.switch-right::before {
+  right: -0.375em;
+  background-color: transparent;
+  transform: skewY(65deg);
+}
+
+input:checked + .switch-left {
+  background-color: #0084d0;
+  color: #fff;
+  bottom: 0px;
+  left: 0.5em;
+  height: 2.5em;
+  width: 3em;
+  transform: rotate(0deg) skewX(0deg);
+}
+
+input:checked + .switch-left::before {
+  background-color: transparent;
+  width: 3.0833em;
+}
+
+input:checked + .switch-left + .switch-right {
+  background-color: #ddd;
+  color: #888;
+  bottom: 0.4em;
+  right: 0.8em;
+  height: 2.4em;
+  width: 2.75em;
+  transform: rotate(-15deg) skewX(-15deg);
+}
+
+input:checked + .switch-left + .switch-right::before {
+  background-color: #ccc;
+}
+
+/* Keyboard Users */
+input:focus + .switch-left {
+  color: #333;
+}
+
+input:checked:focus + .switch-left {
+  color: #fff;
+}
+
+input:focus + .switch-left + .switch-right {
+  color: #fff;
+}
+
+input:checked:focus + .switch-left + .switch-right {
+  color: #333;
+}
+
+/* The switch - the box around the slider 
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  height: 50px;
+}*/
+
+/* Hide default HTML checkbox 
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}*/
+
+/* The slider 
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 40px;
+  width: 40px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #be7016;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 5px #be7016;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}*/
+
+/* Rounded sliders 
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}*/
