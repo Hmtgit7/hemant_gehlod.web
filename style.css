@@ -32,7 +32,7 @@ html{
 /* all similar content styling code  */
 .max-width {
     max-width: 1300px;
-    padding: 0 80px;
+    padding: 0;
     margin: auto;
 }
 
@@ -98,10 +98,6 @@ section .title::after {
     background: #fff;
     transform: translateX(-50%);
 }
-
-
-
-
 
 /* navbar styling */
 .navbar{
@@ -238,112 +234,9 @@ section .title::after {
     color: crimson;
     background: none;
 }
-/* scrollup button styling  */
-
-.scroll-up-btn {
-    position: fixed;
-    height: 45px;
-    width: 45px;
-    background: crimson;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    border-bottom-width: 2px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.scroll-up-btn.show {
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-}
-
-.scroll-up-btn:hover {
-    filter: brightness(90%);
-}
-
-/* .menu-btn:hover{
-    color:crimson;
-    border:2px solid crimson;
-    box-shadow:1px 1px px 0px white; 
-}*/
 
 
 
-/* home section styling */
-
-.home {
-    display: flex;
-    background: url("images/banner-4.jpg") no-repeat center;
-    height: 100vh;
-    color: #fff;
-    min-height: 500px;
-    background-size: cover;
-    background-attachment: fixed;
-    font-family: 'Ubuntu', sans-serif;
-
-    /* only for media-icons */
-
-    justify-content: center;
-    flex-direction: column;
-}
-
-.home .max-width {
-    margin: auto 0 auto 40px;
-
-}
-
-.home .home-content .text-1 {
-    font-size: 27px;
-}
-
-.home .home-content .text-2 {
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home .home-content .text-3 {
-    font-size: 40px;
-    margin: 5px 0;
-}
-
-.home .home-content .text-3 span {
-    color: yellow;
-    font-weight: 500;
-}
-
-/* hire button css */
-
-.home .home-content a {
-    display: inline-block;
-    background: crimson;
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    text-transform: capitalize;
-    border: 1px solid crimson;
-    margin-top: 20px;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.home .home-content a:hover {
-    color: crimson;
-    background: none;
-}
-
-
-/* media icon css */
 
 .home .media-icons {
     z-index: 888;
@@ -370,6 +263,7 @@ section .title::after {
     color: crimson;
     opacity: 1;
 }
+
 
 
 /*  -------------------------------------------------------------  */
