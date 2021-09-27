@@ -32,6 +32,7 @@
 </head>
 
 <body>
+    <div id="preLoader"></div>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -588,6 +589,12 @@
 
 
     <script src="hemant.js"></script>
+    <script>
+        var loader=document.getElementById("preLoader");
+        window.addEventListener("load" , function(){
+            loader.style.display="none";
+        })
+    </script>
 </body>
 
 </html>
