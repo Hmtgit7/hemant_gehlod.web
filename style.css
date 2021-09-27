@@ -99,6 +99,7 @@ section .title::after {
     transform: translateX(-50%);
 }
 
+
 /* navbar styling */
 .navbar{
     position: fixed;
@@ -146,6 +147,24 @@ section .title::after {
 }
 .navbar.sticky .menu li a:hover{
     color: #fff;
+}
+/* preloader styling*/
+#preLoader{
+    background: #111 url("images/Bold\ Preloader.gif") no-repeat center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+}
+
+#preLoader{
+    background: #111 url("images/Bold\ Preloader.gif") no-repeat center;
+    background-size: 50%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
 }
 
 /* menu btn styling */
